@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+        }
+        
+        .nav_links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .nav_links ul{
+            
+           display: flex;
+           
+           
+
+        }
+        header div ul li{
+            text-decoration: none;
+            list-style-type: none;
+            margin-left: 30px;
+            cursor: pointer;
+            
+        }
+
+        .img_container img{
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            width: 100%;
+            
+        }
+        
+        @media (min-width: 990px) and (max-width : 2500px){
+            .img_container img{
+                width: 50%;
+                height: 50%;
+            }
+
+        }
+
+
+
+        .img_container{
+            display: flex;
+            margin-top: 150px;
+        }
+
+        .hero_text_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 50px;
+        }
+
+        .signup_btn{
+            background: #387ed1;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="https://zerodha.com/static/images/logo.svg" alt="" height="20px"></div>
+        <div class="nav_links">
+            <ul>
+                <li>Signup</li>
+                <li>About</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Support</li>
+            </ul>
+        </div>
+    </header>
+    <div class="img_container">
+        <img src="https://zerodha.com/static/images/landing.png" alt="" >
+    </div>
+   
+    <div class="hero_text_container">
+        <h1>Invest in everything</h1>
+        <p>Online platform to invest in stokes, derivaties , mutual funds , and more</p>
+        <span><button class="signup_btn">Sign up now </button></span>
+        
+    </div>
+</body>
+</html>
